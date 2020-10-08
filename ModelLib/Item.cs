@@ -50,9 +50,16 @@ namespace ModelLib
             set { _quantity = value; }
         }
 
+        #region Methods
+
         public override string ToString()
         {
             return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(Quality)}: {Quality}, {nameof(Quantity)}: {Quantity}";
         }
+
+
+        #endregion
+
+
     }
 }
