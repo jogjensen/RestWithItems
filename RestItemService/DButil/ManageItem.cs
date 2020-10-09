@@ -9,7 +9,7 @@ namespace RestItemService.DButil
 {
     public class ManageItem
     {
-        private const String connectionString = "Data Source=itemsdbs.database.windows.net;Initial Catalog=ItemsDB;User ID=user1;Password=********;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private const String connectionString = "Server=tcp:itemsdbs.database.windows.net,1433;Initial Catalog=ItemsDB;Persist Security Info=False;User ID=user1;Password={Fth1478965};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         private const String GET_ALL = "select * from Items";
 
